@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+void swap(int *pN1,int *pN2){
+	 int temp;
+	 temp=*pN1;
+	 *pN1=*pN2;
+	 *pN2=temp;
+}
+
+int main(){
+	int N1,N2;
+	printf("Enter N1:");
+	scanf("%d",&N1);
+	printf("Enter N2:");
+	scanf("%d",&N2);
+	
+	swap(&N1,&N2);
+	printf("N1=%d\nN2=%d",N1,N2);
+	
+	
+}
